@@ -1,0 +1,18 @@
+{
+  "id": "sam6d",
+  "title": "SAM-6D: Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation",
+  "year": 2024,
+  "venue": "CVPR 2024",
+  "family": "通用物体 / CAD / 分割与部分点云配准",
+  "input": "RGB-D、相机内参、目标CAD；框架内部生成实例候选",
+  "object_prior": "目标CAD/mesh与其渲染模板",
+  "training_requirement": "ISM使用冻结基础模型无需额外训练；PEM用合成数据预训练；新对象无需重训",
+  "output": "物体坐标系到相机坐标系的刚体变换 T_camera_object = [R|t]",
+  "code_url": "https://github.com/JiehongLin/SAM-6D",
+  "paper_url": "https://arxiv.org/abs/2311.15707",
+  "priority": "P0",
+  "evidence_status": "official_paper_html_and_repository_verified; not_reproduced",
+  "note_path": "related_work/papers/2024_sam6d/README.md",
+  "verified_on": "2026-09-29",
+  "checked_on": "2026-09-29"
+}

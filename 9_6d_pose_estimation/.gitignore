@@ -1,0 +1,8 @@
+DataSet/*
+!DataSet/README.md
+related_work/**/paper.pdf
+related_work/**/source/
+experiment/*/checkpoints/
+experiment/*/*.pt
+*.orig
+__pycache__/

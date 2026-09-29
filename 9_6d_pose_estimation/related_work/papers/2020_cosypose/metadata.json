@@ -1,0 +1,17 @@
+{
+  "id": "cosypose",
+  "title": "CosyPose: Consistent multi-view multi-object 6D pose estimation",
+  "year": 2020,
+  "venue": "ECCV",
+  "family": "instance-level; render-based refinement; multi-view scene optimization",
+  "input": "One/multiple RGB views + camera intrinsics; detections for single-object estimator",
+  "object_prior": "Known metric 3D object models; relative camera poses may be unknown",
+  "training_requirement": "Known-object detection/coarse/refiner training; multi-view matching and scene refinement",
+  "output": "Object poses and relative camera poses in a consistent scene; single-view object-to-camera R,t",
+  "code_url": "https://github.com/yannlabb/cosypose",
+  "paper_url": "https://arxiv.org/abs/2008.08465",
+  "priority": "P0",
+  "evidence_status": "method_html_project_and_official_readme_verified; original_repo_unmaintained; single_view_BOP_and_multiview_distinguished; tables_not_fully_audited; not_reproduced",
+  "note_path": "related_work/papers/2020_cosypose/README.md",
+  "checked_on": "2026-09-29"
+}

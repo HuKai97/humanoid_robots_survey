@@ -1,0 +1,17 @@
+{
+  "id": "icg",
+  "title": "Iterative Corresponding Geometry: Fusing Region and Depth for Highly Efficient 3D Tracking of Textureless Objects",
+  "year": 2022,
+  "venue": "CVPR 2022",
+  "family": "CAD-based geometric / probabilistic tracking",
+  "input": "连续颜色/深度图、相机标定、物体几何模型和初始化位姿",
+  "object_prior": "精确或足够准确的刚体几何；无需物体纹理模型",
+  "training_requirement": "不依赖离线学习训练；预计算几何视点表示并维护图像颜色统计",
+  "output": "连续 R、t；支持多对象/多相机组合的代码框架",
+  "code_url": "https://github.com/DLR-RM/3DObjectTracking/tree/master/ICG",
+  "paper_url": "https://arxiv.org/abs/2203.05334",
+  "priority": "P0",
+  "evidence_status": "作者机构题录、论文 HTML 的方法/局限、官方代码 README 已核验；未运行",
+  "note_path": "related_work/papers/2022_icg/README.md",
+  "checked_on": "2026-09-29"
+}

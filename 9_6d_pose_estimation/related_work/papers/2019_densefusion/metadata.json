@@ -1,0 +1,17 @@
+{
+  "id": "densefusion",
+  "title": "DenseFusion: 6D Object Pose Estimation by Iterative Dense Fusion",
+  "year": 2019,
+  "venue": "CVPR",
+  "family": "instance-level; RGB-D fusion; iterative refinement",
+  "input": "Aligned RGB-D + camera intrinsics + object segmentation",
+  "object_prior": "Known metric object models and trained target set",
+  "training_requirement": "Supervised object pose training; separate initial-pose/refinement schedule; segmentation needed",
+  "output": "Object-to-camera R,t",
+  "code_url": "https://github.com/j96w/DenseFusion",
+  "paper_url": "https://arxiv.org/abs/1901.04780",
+  "priority": "P0",
+  "evidence_status": "method_html_project_and_official_readme_verified; experiment_tables_not_fully_audited; not_reproduced",
+  "note_path": "related_work/papers/2019_densefusion/README.md",
+  "checked_on": "2026-09-29"
+}

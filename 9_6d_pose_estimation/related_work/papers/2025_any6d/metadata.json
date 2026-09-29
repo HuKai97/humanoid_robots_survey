@@ -1,0 +1,17 @@
+{
+  "id": "any6d",
+  "title": "Any6D: Model-free 6D Pose Estimation of Novel Objects",
+  "year": 2025,
+  "venue": "CVPR 2025",
+  "family": "新物体/单参考图像",
+  "input": "RGB-D anchor + RGB-D query + 内参与对象区域",
+  "object_prior": "单张同对象 RGB-D 参考；生成对象形状",
+  "training_requirement": "使用通用预训练模块；对象准备含生成和尺寸/位姿优化",
+  "output": "相对 anchor 的 SE(3)；中间估计对象尺寸与姿态",
+  "code_url": "https://github.com/taeyeopl/Any6D",
+  "paper_url": "https://arxiv.org/abs/2503.18673",
+  "priority": "P1",
+  "evidence_status": "在线方法正文、实验设置和官方README；四组主要实验GT mask；未运行",
+  "note_path": "related_work/papers/2025_any6d/README.md",
+  "checked_on": "2026-09-29"
+}

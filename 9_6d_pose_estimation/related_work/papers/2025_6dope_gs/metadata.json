@@ -1,0 +1,17 @@
+{
+  "id": "6dope_gs",
+  "title": "6DOPE-GS: Online 6D Object Pose Estimation using Gaussian Splatting",
+  "year": 2025,
+  "venue": "ICCV 2025（arXiv 初版 2024）",
+  "family": "跟踪与在线重建",
+  "input": "RGB-D 视频、内参、目标指定和分割",
+  "object_prior": "无预先 CAD；连续视频在线对象建模",
+  "training_requirement": "通用预训练匹配/分割；运行时优化 Gaussian 表示与位姿",
+  "output": "连续物体 SE(3) 和 Gaussian 对象表示",
+  "code_url": null,
+  "paper_url": "https://arxiv.org/abs/2412.01543",
+  "priority": "P1",
+  "evidence_status": "在线v2方法/实验设置、正式会场与项目页；项目Code Coming Soon",
+  "note_path": "related_work/papers/2025_6dope_gs/README.md",
+  "checked_on": "2026-09-29"
+}

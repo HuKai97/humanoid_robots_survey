@@ -1,0 +1,17 @@
+{
+  "id": "captra",
+  "title": "CAPTRA: CAtegory-Level Pose Tracking for Rigid and Articulated Objects From Point Clouds",
+  "year": 2021,
+  "venue": "ICCV 2021",
+  "family": "category-level rigid / articulated tracking",
+  "input": "深度点云序列与初始物体/逐部件位姿；可用 RGB 分割；真实关节物体示例有对象 mask 条件",
+  "object_prior": "已学习类别与部件定义；同类部件数已知且固定；无需测试实例 CAD",
+  "training_requirement": "类别/逐部件姿态与规范坐标监督；以姿态扰动构造训练对",
+  "output": "刚体或逐部件 R、t、三维尺寸（9DoF 描述），可分析关节状态",
+  "code_url": "https://github.com/HalfSummer11/CAPTRA",
+  "paper_url": "https://arxiv.org/abs/2104.03437",
+  "priority": "P1",
+  "evidence_status": "论文 HTML 方法/初始化/局限与作者代码核验；未运行；刚体与真实关节对象协议需区分",
+  "note_path": "related_work/papers/2021_captra/README.md",
+  "checked_on": "2026-09-29"
+}

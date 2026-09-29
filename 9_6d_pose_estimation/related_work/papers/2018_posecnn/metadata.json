@@ -1,0 +1,17 @@
+{
+  "id": "posecnn",
+  "title": "PoseCNN: A Convolutional Neural Network for 6D Object Pose Estimation in Cluttered Scenes",
+  "year": 2018,
+  "venue": "RSS",
+  "family": "instance-level; direct pose regression; center voting",
+  "input": "RGB + camera intrinsics; optional depth ICP refinement",
+  "object_prior": "Known object identity and metric 3D model; trained target set",
+  "training_requirement": "Supervised target-object pose/segmentation training; object model for pose loss",
+  "output": "Object-to-camera R,t",
+  "code_url": "https://github.com/yuxng/PoseCNN",
+  "paper_url": "https://arxiv.org/abs/1711.00199v3",
+  "priority": "P1",
+  "evidence_status": "method_html_project_and_official_readme_verified; experiment_tables_not_fully_audited; not_reproduced",
+  "note_path": "related_work/papers/2018_posecnn/README.md",
+  "checked_on": "2026-09-29"
+}

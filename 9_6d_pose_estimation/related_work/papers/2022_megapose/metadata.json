@@ -1,0 +1,18 @@
+{
+  "id": "megapose",
+  "title": "MegaPose: 6D Pose Estimation of Novel Objects via Render & Compare",
+  "year": 2022,
+  "venue": "CoRL 2022; PMLR proceedings published 2023",
+  "family": "通用物体 / CAD / render-and-compare",
+  "input": "RGB；可选深度；内参；目标2D框",
+  "object_prior": "具有度量尺度和坐标系的目标CAD/mesh",
+  "training_requirement": "通用姿态网络在大规模合成数据上预训练；新对象无需重训；需准备mesh与检测框",
+  "output": "物体坐标系到相机坐标系的刚体变换 T_camera_object = [R|t]",
+  "code_url": "https://github.com/megapose6d/megapose6d",
+  "paper_url": "https://arxiv.org/abs/2212.06870",
+  "priority": "P0",
+  "evidence_status": "official_paper_project_and_repository_verified; not_reproduced",
+  "note_path": "related_work/papers/2022_megapose/README.md",
+  "verified_on": "2026-09-29",
+  "checked_on": "2026-09-29"
+}

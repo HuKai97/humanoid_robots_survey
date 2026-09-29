@@ -1,0 +1,116 @@
+[
+  {
+    "id": "dino_wm",
+    "title": "DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning",
+    "year": 2024,
+    "category": "预训练视觉特征与动作条件潜空间预测",
+    "embodiment": "模拟导航与操作",
+    "is_world_model": true,
+    "note": "未做人形真机验证；已读v1方法，项目后续任务数不混用",
+    "path": "papers/2024_dino_wm.md",
+    "sources": [
+      "https://arxiv.org/abs/2411.04983",
+      "https://arxiv.org/html/2411.04983v1",
+      "https://dino-wm.github.io/",
+      "https://github.com/gaoyuezhou/dino_wm"
+    ],
+    "read_depth": "B+ HTML方法/实验及官方项目/README；未复现",
+    "priority": "P0",
+    "verified_at": "2026-09-29"
+  },
+  {
+    "id": "v_jepa_2",
+    "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+    "year": 2025,
+    "category": "视频预训练与V-JEPA 2-AC动作条件规划",
+    "embodiment": "真实Franka机械臂",
+    "is_world_model": true,
+    "note": "基础预训练与AC后训练区分；2.1仅作为2026表征更新线索",
+    "path": "papers/2025_v_jepa_2.md",
+    "sources": [
+      "https://arxiv.org/abs/2506.09985",
+      "https://arxiv.org/html/2506.09985v1",
+      "https://ai.meta.com/research/vjepa/",
+      "https://github.com/facebookresearch/vjepa2"
+    ],
+    "read_depth": "B+ HTML动作条件方法/规划/实验/局限及官方资源；未复现",
+    "priority": "P0",
+    "verified_at": "2026-09-29"
+  },
+  {
+    "id": "pointworld",
+    "title": "PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation",
+    "year": 2026,
+    "category": "动作条件三维点流世界模型",
+    "embodiment": "Franka真实闭环；模拟双臂移动机器人数据",
+    "is_world_model": true,
+    "note": "含B1K数据不等于双足全身控制证据；已有不确定性头，不能把加方差头当空白",
+    "path": "papers/2026_pointworld.md",
+    "sources": [
+      "https://arxiv.org/abs/2601.03782",
+      "https://arxiv.org/html/2601.03782v1",
+      "https://point-world.github.io/",
+      "https://github.com/NVlabs/PointWorld",
+      "https://huggingface.co/nvidia/PointWorld_models"
+    ],
+    "read_depth": "B+ HTML方法/实验/局限及官方代码/项目/模型卡；未复现",
+    "priority": "P0",
+    "verified_at": "2026-09-29"
+  },
+  {
+    "id": "occworld",
+    "title": "OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving",
+    "year": 2023,
+    "category": "三维占据与自车轨迹联合预测",
+    "embodiment": "自动驾驶；跨域方法参考",
+    "is_world_model": true,
+    "note": "ECCV2024；联合预测不等同于任意人形动作反事实模拟；不是人形证据",
+    "path": "papers/2023_occworld.md",
+    "sources": [
+      "https://arxiv.org/abs/2311.16038",
+      "https://arxiv.org/html/2311.16038v1",
+      "https://wzzheng.net/OccWorld/",
+      "https://github.com/wzzheng/OccWorld"
+    ],
+    "read_depth": "B+ HTML方法/实验及官方项目/README；未复现",
+    "priority": "P1",
+    "verified_at": "2026-09-29"
+  },
+  {
+    "id": "dp3",
+    "title": "3D Diffusion Policy: Generalizable Visuomotor Policy Learning via Simple 3D Representations",
+    "year": 2024,
+    "category": "三维模仿学习策略对照",
+    "embodiment": "模拟操作与真实机器人操作",
+    "is_world_model": false,
+    "note": "生成动作而非预测环境转移；用于分离感知收益与世界模型收益",
+    "path": "papers/2024_3d_diffusion_policy.md",
+    "sources": [
+      "https://arxiv.org/abs/2403.03954",
+      "https://arxiv.org/html/2403.03954v4",
+      "https://3d-diffusion-policy.github.io/",
+      "https://github.com/YanjieZe/3D-Diffusion-Policy"
+    ],
+    "read_depth": "B+ HTMLv4方法/实验及官方项目/README；未复现",
+    "priority": "P0",
+    "verified_at": "2026-09-29"
+  },
+  {
+    "id": "conceptgraphs",
+    "title": "ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning",
+    "year": 2023,
+    "category": "语义建图与高层规划对照",
+    "embodiment": "三维场景/移动机器人导航",
+    "is_world_model": false,
+    "note": "ICRA2024；对象图不是动作条件动力学；全文HTML未获得",
+    "path": "papers/2023_conceptgraphs.md",
+    "sources": [
+      "https://arxiv.org/abs/2309.16650",
+      "https://concept-graphs.github.io/",
+      "https://github.com/concept-graphs/concept-graphs"
+    ],
+    "read_depth": "B 官方摘要/项目方法说明/README；无全文精读或复现",
+    "priority": "P1",
+    "verified_at": "2026-09-29"
+  }
+]

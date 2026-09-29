@@ -1,0 +1,18 @@
+{
+  "id": "gen6d",
+  "title": "Gen6D: Generalizable Model-Free 6-DoF Object Pose Estimation from RGB Images",
+  "year": 2022,
+  "venue": "ECCV 2022",
+  "family": "通用物体 / 参考图像 / 特征体精修",
+  "input": "RGB查询图、内参、带位姿参考RGB图像",
+  "object_prior": "同一新物体多视角参考图及位姿；参考坐标系/尺度需建立；不要求CAD",
+  "training_requirement": "通用检测/视角选择/精修网络预训练；新实例无需重训；需要参考图准备",
+  "output": "物体坐标系到相机坐标系的刚体变换 T_camera_object = [R|t]",
+  "code_url": "https://github.com/liuyuan-pal/Gen6D",
+  "paper_url": "https://arxiv.org/abs/2204.10776",
+  "priority": "P1",
+  "evidence_status": "official_paper_project_and_repository_verified; not_reproduced",
+  "note_path": "related_work/papers/2022_gen6d/README.md",
+  "verified_on": "2026-09-29",
+  "checked_on": "2026-09-29"
+}

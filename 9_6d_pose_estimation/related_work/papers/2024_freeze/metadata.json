@@ -1,0 +1,19 @@
+{
+  "id": "freeze",
+  "title": "FreeZe: Training-free zero-shot 6D pose estimation with geometric and vision foundation models",
+  "year": 2024,
+  "venue": "ECCV 2024",
+  "family": "通用物体 / CAD / 冻结几何与视觉特征 / 3D-3D配准",
+  "input": "RGB-D、内参、候选mask或框",
+  "object_prior": "目标三维模型及渲染外观；不是无模型方法",
+  "training_requirement": "无需对象或6D任务专属训练；使用已预训练的GeDi和DINOv2；对象特征需预计算",
+  "output": "物体坐标系到相机坐标系的刚体变换 T_camera_object = [R|t]",
+  "code_url": null,
+  "paper_url": "https://arxiv.org/abs/2312.00947",
+  "priority": "P1",
+  "evidence_status": "paper_html_and_official_project_verified; linked_repository_contains_website_only; algorithm_implementation_unverified; not_reproduced",
+  "note_path": "related_work/papers/2024_freeze/README.md",
+  "verified_on": "2026-09-29",
+  "official_repository_url": "https://github.com/andreacaraffa/freeze/",
+  "checked_on": "2026-09-29"
+}

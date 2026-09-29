@@ -1,0 +1,17 @@
+{
+  "id": "gdr_net",
+  "title": "GDR-Net: Geometry-Guided Direct Regression Network for Monocular 6D Object Pose Estimation",
+  "year": 2021,
+  "venue": "CVPR",
+  "family": "instance-level; geometry-guided direct regression; learned Patch-PnP",
+  "input": "RGB ROI + camera intrinsics + crop metadata",
+  "object_prior": "Known CAD models and trained target objects",
+  "training_requirement": "Supervised dense coordinates/surface regions/pose using CAD and object poses",
+  "output": "Object-to-camera R,t",
+  "code_url": "https://github.com/THU-DA-6D-Pose-Group/GDR-Net",
+  "paper_url": "https://arxiv.org/abs/2102.12145v1",
+  "priority": "P0",
+  "evidence_status": "original_v1_method_html_and_official_readme_verified; later_arxiv_GDRNPP_excluded; tables_not_fully_audited; not_reproduced",
+  "note_path": "related_work/papers/2021_gdr_net/README.md",
+  "checked_on": "2026-09-29"
+}

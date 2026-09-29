@@ -1,0 +1,138 @@
+[
+  {
+    "id": "14",
+    "title": "The Feeling of Success: Does Touch Sensing Help Predict Grasp Outcomes?",
+    "year": 2017,
+    "category": "视觉触觉融合/抓取结果预测",
+    "modalities": [
+      "RGB",
+      "GelSight触觉图像"
+    ],
+    "humanoid_relation": "可迁移方法",
+    "priority": "P1",
+    "arxiv_url": "https://arxiv.org/abs/1710.05512",
+    "project_url": null,
+    "code_url": null,
+    "note_path": "papers/14_Feeling_of_Success/note.md",
+    "evidence_level": "会议摘要+全文HTML方法/采集/评估设置；未复现",
+    "authors": "Calandra, Roberto and Owens, Andrew and Upadhyaya, Manu and Yuan, Wenzhen and Lin, Justin and Adelson, Edward H. and Levine, Sergey"
+  },
+  {
+    "id": "15",
+    "title": "Making Sense of Vision and Touch: Self-Supervised Learning of Multimodal Representations for Contact-Rich Tasks",
+    "year": 2018,
+    "category": "多模态表征/接触操作",
+    "modalities": [
+      "RGB",
+      "深度（扩展版）",
+      "力/力矩",
+      "本体感觉"
+    ],
+    "humanoid_relation": "可迁移方法",
+    "priority": "P1",
+    "arxiv_url": "https://arxiv.org/abs/1810.10191",
+    "project_url": "https://sites.google.com/view/visionandtouch",
+    "code_url": "https://github.com/stanford-iprl-lab/multimodal_representation",
+    "note_path": "papers/15_Making_Sense_of_Vision_and_Touch/note.md",
+    "evidence_level": "首版摘要+项目页+2019扩展版全文HTML方法/实验设置；未复现",
+    "authors": "Lee, Michelle A. and Zhu, Yuke and Srinivasan, Krishnan and Shah, Parth and Savarese, Silvio and Fei-Fei, Li and Garg, Animesh and Bohg, Jeannette"
+  },
+  {
+    "id": "16",
+    "title": "DIGIT: A Novel Design for a Low-Cost Compact High-Resolution Tactile Sensor with Application to In-Hand Manipulation",
+    "year": 2020,
+    "category": "触觉传感器硬件基础",
+    "modalities": [
+      "光学触觉图像",
+      "关节状态（演示系统）"
+    ],
+    "humanoid_relation": "基础支撑",
+    "priority": "P1",
+    "arxiv_url": "https://arxiv.org/abs/2005.14679",
+    "project_url": "https://digit.ml/",
+    "code_url": "https://github.com/facebookresearch/digit-design",
+    "note_path": "papers/16_DIGIT/note.md",
+    "evidence_level": "摘要+全文HTML硬件/操作方法+官方设计仓库；未制造/复现",
+    "authors": "Lambeta, Mike and Chou, Po-Wei and Tian, Stephen and others"
+  },
+  {
+    "id": "17",
+    "title": "ImageBind: One Embedding Space To Bind Them All",
+    "year": 2023,
+    "category": "跨模态统一表征",
+    "modalities": [
+      "图像/视频",
+      "文本",
+      "音频",
+      "深度",
+      "热成像",
+      "IMU"
+    ],
+    "humanoid_relation": "基础支撑",
+    "priority": "P2",
+    "arxiv_url": "https://arxiv.org/abs/2305.05665",
+    "project_url": "https://imagebind.metademolab.com/",
+    "code_url": "https://github.com/facebookresearch/ImageBind",
+    "note_path": "papers/17_ImageBind/note.md",
+    "evidence_level": "摘要+全文HTML方法/部分评估+官方仓库；未运行",
+    "authors": "Girdhar, Rohit and El-Nouby, Alaaeldin and Liu, Zhuang and Singh, Mannat and Alwala, Kalyan Vasudev and Joulin, Armand and Misra, Ishan"
+  },
+  {
+    "id": "18",
+    "title": "Touch and Go: Learning from Human-Collected Vision and Touch",
+    "year": 2022,
+    "category": "视觉触觉数据与表征",
+    "modalities": [
+      "RGB视频",
+      "GelSight触觉视频",
+      "材料标签"
+    ],
+    "humanoid_relation": "基础支撑/可迁移数据方法",
+    "priority": "P1",
+    "arxiv_url": "https://arxiv.org/abs/2211.12498",
+    "project_url": "https://touch-and-go.github.io/",
+    "code_url": "https://github.com/fredfyyang/Touch-and-Go",
+    "note_path": "papers/18_Touch_and_Go/note.md",
+    "evidence_level": "项目页+全文HTML采集/应用/局限+官方仓库简介；未下载数据",
+    "authors": "Yang, Fengyu and Ma, Chenyang and Zhang, Jiacheng and Zhu, Jing and Yuan, Wenzhen and Owens, Andrew"
+  },
+  {
+    "id": "19",
+    "title": "Octo: An Open-Source Generalist Robot Policy",
+    "year": 2024,
+    "category": "策略学习/感知到动作接口",
+    "modalities": [
+      "RGB",
+      "语言/目标图像",
+      "本体感觉",
+      "力/力矩（微调）"
+    ],
+    "humanoid_relation": "可迁移方法",
+    "priority": "P2",
+    "arxiv_url": "https://arxiv.org/abs/2405.12213",
+    "project_url": "https://octo-models.github.io/",
+    "code_url": "https://github.com/octo-models/octo",
+    "note_path": "papers/19_Octo/note.md",
+    "evidence_level": "项目页+v2全文HTML架构/适配实验+官方仓库；未运行",
+    "authors": "{Octo Model Team} and Ghosh, Dibya and Walke, Homer and Pertsch, Karl and others"
+  },
+  {
+    "id": "20",
+    "title": "AnyTouch: Learning Unified Static-Dynamic Representation across Multiple Visuo-tactile Sensors",
+    "year": 2025,
+    "category": "跨传感器静态/动态触觉表征",
+    "modalities": [
+      "多传感器触觉图像/视频",
+      "视觉",
+      "文本"
+    ],
+    "humanoid_relation": "可迁移方法",
+    "priority": "P2",
+    "arxiv_url": "https://arxiv.org/abs/2502.12191",
+    "project_url": "https://gewu-lab.github.io/AnyTouch/",
+    "code_url": "https://github.com/GeWu-Lab/AnyTouch",
+    "note_path": "papers/20_AnyTouch/note.md",
+    "evidence_level": "全文HTML方法/倾倒设置/局限+项目页+官方仓库；2025为本轮核验到的首次公开年份，更早OpenReview时间待核验",
+    "authors": "Feng, Ruoxuan and Hu, Jiangyu and Xia, Wenke and Gao, Tianci and Shen, Ao and Sun, Yuhao and Fang, Bin and Hu, Di"
+  }
+]

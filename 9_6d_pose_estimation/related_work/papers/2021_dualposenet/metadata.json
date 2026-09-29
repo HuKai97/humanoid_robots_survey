@@ -1,0 +1,17 @@
+{
+  "id": "dualposenet",
+  "title": "DualPoseNet: Category-Level 6D Object Pose and Size Estimation Using Dual Pose Network With Refined Learning of Pose Consistency",
+  "year": 2021,
+  "venue": "ICCV 2021",
+  "family": "category-level dual representation / test-time refinement",
+  "input": "单帧 RGB-D、实例掩码、相机标定",
+  "object_prior": "已学习类别及规范坐标；测试无需实例 CAD",
+  "training_requirement": "监督训练共享编码器、显式位姿与隐式规范点云分支；可选测试时自适应",
+  "output": "R、t、三维尺寸",
+  "code_url": "https://github.com/Gorilla-Lab-SCUT/DualPoseNet",
+  "paper_url": "https://arxiv.org/abs/2103.06526",
+  "priority": "P2",
+  "evidence_status": "论文 HTML 方法、官方 README 与题录核验；未运行",
+  "note_path": "related_work/papers/2021_dualposenet/README.md",
+  "checked_on": "2026-09-29"
+}

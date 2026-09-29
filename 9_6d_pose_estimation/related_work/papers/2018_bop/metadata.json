@@ -1,0 +1,17 @@
+{
+  "id": "bop",
+  "title": "BOP: Benchmark for 6D Object Pose Estimation",
+  "year": 2018,
+  "venue": "ECCV 2018",
+  "family": "基准与评测",
+  "input": "RGB/RGB-D；具体赛道协议不同",
+  "object_prior": "按赛道区分 CAD / 参考视频及对象身份条件",
+  "training_requirement": "评测协议，不是训练模型",
+  "output": "标准化位姿评测",
+  "code_url": "https://github.com/thodan/bop_toolkit",
+  "paper_url": "https://arxiv.org/abs/1808.08319",
+  "priority": "P0",
+  "evidence_status": "原论文摘要、官方协议与工具说明；后续报告摘要；未完整逐表复核",
+  "note_path": "related_work/papers/2018_bop/README.md",
+  "checked_on": "2026-09-29"
+}

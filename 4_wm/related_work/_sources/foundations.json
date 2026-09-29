@@ -1,0 +1,127 @@
+[
+  {
+    "id": "world_models",
+    "title": "World Models / Recurrent World Models Facilitate Policy Evolution",
+    "year": 2018,
+    "category": "潜空间生成动力学",
+    "embodiment": "游戏，无实体机器人",
+    "is_world_model": true,
+    "note": "视觉压缩、循环动力学与进化控制器；注意两版题名。",
+    "path": "papers/2018_world_models.md",
+    "sources": [
+      "https://arxiv.org/abs/1803.10122",
+      "https://arxiv.org/abs/1809.01999",
+      "https://worldmodels.github.io/"
+    ],
+    "read_depth": "作者交互论文模型与实验流程节选",
+    "priority": "P0",
+    "checked_at": "2026-09-29"
+  },
+  {
+    "id": "pets",
+    "title": "Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models",
+    "year": 2018,
+    "category": "概率动力学集成与MPC",
+    "embodiment": "低维状态连续控制仿真",
+    "is_world_model": true,
+    "note": "从系统辨识、概率预测和规划进入世界模型。",
+    "path": "papers/2018_pets.md",
+    "sources": [
+      "https://arxiv.org/abs/1805.12114",
+      "https://github.com/kchua/handful-of-trials"
+    ],
+    "read_depth": "摘要与官方README",
+    "priority": "P1",
+    "checked_at": "2026-09-29"
+  },
+  {
+    "id": "planet",
+    "title": "Learning Latent Dynamics for Planning from Pixels",
+    "year": 2019,
+    "category": "RSSM潜空间在线规划",
+    "embodiment": "视觉连续控制仿真",
+    "is_world_model": true,
+    "note": "预印本2018，ICML2019；估计与预测区分。",
+    "path": "papers/2019_planet.md",
+    "sources": [
+      "https://proceedings.mlr.press/v97/hafner19a.html",
+      "https://research.google/blog/introducing-planet-a-deep-planning-network-for-reinforcement-learning/",
+      "https://github.com/danijar/planet"
+    ],
+    "read_depth": "摘要、官方方法介绍与README",
+    "priority": "P0",
+    "checked_at": "2026-09-29"
+  },
+  {
+    "id": "dreamer",
+    "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "year": 2020,
+    "category": "想象中的行为学习",
+    "embodiment": "视觉连续控制仿真",
+    "is_world_model": true,
+    "note": "预印本2019，ICLR2020；与在线MPC路线对读。",
+    "path": "papers/2020_dreamer.md",
+    "sources": [
+      "https://arxiv.org/abs/1912.01603",
+      "https://danijar.com/project/dreamer/",
+      "https://research.google/blog/introducing-dreamer-scalable-reinforcement-learning-using-world-models/",
+      "https://github.com/danijar/dreamer"
+    ],
+    "read_depth": "摘要、项目、官方方法介绍",
+    "priority": "P0",
+    "checked_at": "2026-09-29"
+  },
+  {
+    "id": "muzero",
+    "title": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+    "year": 2020,
+    "category": "决策导向潜模型与树搜索",
+    "embodiment": "棋类与Atari，无机器人",
+    "is_world_model": true,
+    "note": "预印本2019，Nature2020；模型可以不重建图像。",
+    "path": "papers/2020_muzero.md",
+    "sources": [
+      "https://arxiv.org/abs/1911.08265",
+      "https://deepmind.google/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/"
+    ],
+    "read_depth": "摘要与官方介绍",
+    "priority": "P2",
+    "checked_at": "2026-09-29"
+  },
+  {
+    "id": "tdmpc2",
+    "title": "TD-MPC2: Scalable, Robust World Models for Continuous Control",
+    "year": 2024,
+    "category": "控制导向潜动力学与MPC",
+    "embodiment": "多种仿真连续控制，含仿真人形",
+    "is_world_model": true,
+    "note": "预印本2023，ICLR2024；相同配置与共享多任务模型分别核对。",
+    "path": "papers/2024_tdmpc2.md",
+    "sources": [
+      "https://arxiv.org/html/2310.16828v2",
+      "https://www.tdmpc2.com/",
+      "https://github.com/nicklashansen/tdmpc2"
+    ],
+    "read_depth": "HTML方法/实验概览、项目与README",
+    "priority": "P0",
+    "checked_at": "2026-09-29"
+  },
+  {
+    "id": "dreamerv3",
+    "title": "Mastering diverse control tasks through world models",
+    "year": 2025,
+    "category": "稳定的潜空间世界模型与想象策略",
+    "embodiment": "游戏与仿真多域控制",
+    "is_world_model": true,
+    "note": "2023预印本、2025Nature；同算法配置不等于共享单一权重。",
+    "path": "papers/2025_dreamerv3.md",
+    "sources": [
+      "https://www.nature.com/articles/s41586-025-08744-2",
+      "https://danijar.com/project/dreamerv3/",
+      "https://github.com/danijar/dreamerv3"
+    ],
+    "read_depth": "期刊摘要与方法片段、作者项目、官方仓库入口",
+    "priority": "P0",
+    "checked_at": "2026-09-29"
+  }
+]

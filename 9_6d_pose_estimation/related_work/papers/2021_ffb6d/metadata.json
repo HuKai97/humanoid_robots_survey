@@ -1,0 +1,17 @@
+{
+  "id": "ffb6d",
+  "title": "FFB6D: A Full Flow Bidirectional Fusion Network for 6D Pose Estimation",
+  "year": 2021,
+  "venue": "CVPR",
+  "family": "instance-level; bidirectional RGB-D fusion; 3D keypoint voting",
+  "input": "Aligned RGB-D + camera intrinsics",
+  "object_prior": "Known object model with predefined 3D keypoints; trained target set",
+  "training_requirement": "Supervised semantic/center/keypoint prediction; object model keypoint preparation",
+  "output": "Object-to-camera R,t",
+  "code_url": "https://github.com/ethnhe/FFB6D",
+  "paper_url": "https://arxiv.org/abs/2103.02242",
+  "priority": "P1",
+  "evidence_status": "method_html_architecture_appendix_and_official_readme_verified; tables_not_fully_audited; not_reproduced",
+  "note_path": "related_work/papers/2021_ffb6d/README.md",
+  "checked_on": "2026-09-29"
+}

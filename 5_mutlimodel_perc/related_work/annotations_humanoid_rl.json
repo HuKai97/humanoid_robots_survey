@@ -1,0 +1,90 @@
+[
+  {
+    "id": "21",
+    "learning_paradigm": "仿真PPO基础策略＋监督适应模块",
+    "rl_role": "学习带环境潜变量的运动策略；历史预测潜变量使用监督损失，部署不在线梯度更新",
+    "train_observations": "本体、动作、特权环境参数（摩擦/载荷等）经编码器形成潜变量",
+    "deploy_observations": "关节编码器、IMU姿态、足接触、状态动作历史；无视觉，潜环境为估计",
+    "scope_note": "本体适应对照/先修；不是视觉多模态主线",
+    "sources": [
+      "https://arxiv.org/html/2107.04034"
+    ]
+  },
+  {
+    "id": "22",
+    "learning_paradigm": "特权RL教师＋监督模仿学生/信念状态学习",
+    "rl_role": "RL训练理想环境观测下的教师，学生融合外感知与本体并模仿动作",
+    "train_observations": "教师可读环境真实状态；学生读加噪高程及本体历史，受动作及相关重建监督",
+    "deploy_observations": "相机或LiDAR经过预处理的高程图、本体及时间历史；不是RGB/LiDAR/原始IMU全部直输",
+    "scope_note": "核心鲁棒融合阅读；研究融合，固定上游位姿与地形接口，不研究SLAM",
+    "sources": [
+      "https://arxiv.org/html/2201.08117"
+    ]
+  },
+  {
+    "id": "23",
+    "learning_paradigm": "底层PPO动作跟踪＋高层监督行为克隆",
+    "rl_role": "RL训练人体参考动作到本体控制的低层；自主双目技能HIT由示教监督，不是视觉RL",
+    "train_observations": "低层：仿真人体重定向参考与本体；高层：真实遥操作双目RGB、本体、目标动作与视觉特征监督",
+    "deploy_observations": "自主时双目RGB和本体；低层IMU姿态/角速度、关节状态/上一动作；外部RGB看人仅遥操作阶段",
+    "scope_note": "保留为直接人形视觉与本体系统；不可列为高层感知直接RL",
+    "sources": [
+      "https://arxiv.org/html/2406.10454v1"
+    ]
+  },
+  {
+    "id": "24",
+    "learning_paradigm": "特权PPO教师＋DAgger低层学生；高层示教/扩散策略与原语选择",
+    "rl_role": "RL主要学习运动跟踪教师；视觉自主示教策略为模仿学习，视觉决策与本体控制分层",
+    "train_observations": "特权教师全身状态和参考；低层学生本体历史及稀疏头手目标；高层图像及示教动作目标",
+    "deploy_observations": "低层关节状态、角速度、重力方向与动作历史及运动目标；高层相机图像生成目标/选原语；不将VR/RGB/语言都写成同时融合",
+    "scope_note": "系统与数据采集拓展；语言不是当前主线",
+    "sources": [
+      "https://arxiv.org/html/2406.08858v1"
+    ]
+  },
+  {
+    "id": "25",
+    "learning_paradigm": "大规模模仿学习/流匹配动作学习及后训练",
+    "rl_role": "N1原始论文主方法并非RL，不因名称foundation model或机器人执行动作而标RL",
+    "train_observations": "机器人图像/语言/状态/动作；人类视频和合成数据通过潜动作/伪动作等形成监督",
+    "deploy_observations": "图像、语言条件、本体状态经本体专用编码到动作",
+    "scope_note": "VLA背景拓展，语言非本次主线；不混用后续N1版本",
+    "sources": [
+      "https://arxiv.org/html/2503.14734v1"
+    ]
+  },
+  {
+    "id": "26",
+    "learning_paradigm": "仿真RL子任务策略＋分治蒸馏＋自动校准/视觉预处理",
+    "rl_role": "RL优化接触与物体目标，教师/子策略再蒸馏为可迁移操作策略；SAM2本身不是由本文RL训练",
+    "train_observations": "仿真稀疏物体位置、深度、本体及用于奖励的真实接触/物体目标；校准用真实响应",
+    "deploy_observations": "头部深度、第三视角相机经分割/深度恢复的近似物体位置、本体；不含真实物体质心或接触真值",
+    "scope_note": "核心RGB-D/本体操作方向；明确外部相机依赖与融合层级",
+    "sources": [
+      "https://arxiv.org/html/2502.20396v1"
+    ]
+  },
+  {
+    "id": "27",
+    "learning_paradigm": "低层RL跟踪/蒸馏＋高层特权RL＋视觉学生蒸馏",
+    "rl_role": "RL得到动作跟踪器和基于物体状态的任务教师；最终深度高层主要用教师监督",
+    "train_observations": "低层人体动作目标；高层教师真实物体状态与本体，视觉学生读深度与本体",
+    "deploy_observations": "预处理第一人称深度、IMU相关姿态/角速度与关节状态等本体；不需要外部物体真值",
+    "scope_note": "核心直接人形视觉—本体全身操作，但不是纯单阶段像素RL",
+    "sources": [
+      "https://arxiv.org/html/2509.20322v1"
+    ]
+  },
+  {
+    "id": "28",
+    "learning_paradigm": "非对称演员评论家PPO＋状态/接触/未来落脚及读取辅助监督",
+    "rl_role": "PPO训练融合策略；辅助预测和历史可见区监督训练表征，部分预测路径有停止梯度",
+    "train_observations": "演员：本体与深度历史；评论家额外干净速度/地形/接触；真实未来接触与相机位姿用于训练标签",
+    "deploy_observations": "本体角速度、估计重力方向、关节状态、命令/动作及历史深度；落脚分布/速度/接触概率为网络估计",
+    "scope_note": "核心近期直接人形融合RL；2026-09预印本，消融归因与代码尚有限",
+    "sources": [
+      "https://arxiv.org/html/2609.21447v1"
+    ]
+  }
+]

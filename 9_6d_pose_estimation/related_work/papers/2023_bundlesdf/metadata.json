@@ -1,0 +1,17 @@
+{
+  "id": "bundlesdf",
+  "title": "BundleSDF: Neural 6-DoF Tracking and 3D Reconstruction of Unknown Objects",
+  "year": 2023,
+  "venue": "CVPR 2023",
+  "family": "model-free tracking / online object reconstruction",
+  "input": "单目 RGB-D 视频、相机内参、首帧目标掩码；运行过程需要视频分割",
+  "object_prior": "未知刚体；无需目标 CAD 或目标类别专门训练；首帧定义对象坐标系",
+  "training_requirement": "对象神经场逐视频在线优化；使用通用预训练匹配与分割组件",
+  "output": "连续 6D 位姿与带纹理三维模型",
+  "code_url": "https://github.com/NVlabs/BundleSDF",
+  "paper_url": "https://arxiv.org/abs/2303.14158",
+  "priority": "P1",
+  "evidence_status": "CVPR/作者项目、论文 HTML 方法及局限、官方 README 已核验；未运行；XMem 在线封装未随仓库提供",
+  "note_path": "related_work/papers/2023_bundlesdf/README.md",
+  "checked_on": "2026-09-29"
+}

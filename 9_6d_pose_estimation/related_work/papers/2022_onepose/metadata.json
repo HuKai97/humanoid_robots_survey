@@ -1,0 +1,18 @@
+{
+  "id": "onepose",
+  "title": "OnePose: One-Shot Object Pose Estimation without CAD Models",
+  "year": 2022,
+  "venue": "CVPR 2022",
+  "family": "通用物体 / RGB扫描 / 稀疏SfM / 2D-3D匹配",
+  "input": "RGB查询图、内参；参考RGB扫描及相机位姿、对象3D框",
+  "object_prior": "一次视频扫描建立对象稀疏SfM地图；不是单张参考图",
+  "training_requirement": "通用匹配网络预训练；无新实例/类别专属重训；每对象需建图",
+  "output": "物体坐标系到相机坐标系的刚体变换 T_camera_object = [R|t]",
+  "code_url": "https://github.com/zju3dv/OnePose",
+  "paper_url": "https://arxiv.org/abs/2205.12257",
+  "priority": "P1",
+  "evidence_status": "official_paper_project_and_repository_verified; not_reproduced",
+  "note_path": "related_work/papers/2022_onepose/README.md",
+  "verified_on": "2026-09-29",
+  "checked_on": "2026-09-29"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "nocs",
+  "title": "Normalized Object Coordinate Space for Category-Level 6D Object Pose and Size Estimation",
+  "year": 2019,
+  "venue": "CVPR 2019",
+  "family": "category-level canonical coordinates",
+  "input": "单帧 RGB-D、相机标定；网络估计类别与实例掩码",
+  "object_prior": "已学习类别及统一规范坐标；测试实例的精确 CAD 不需要",
+  "training_requirement": "带类别、掩码、规范坐标监督的合成/真实数据；训练形状库并非不需要",
+  "output": "相机系 R、t 和三维物体尺寸",
+  "code_url": "https://github.com/hughw19/NOCS_CVPR2019",
+  "paper_url": "https://arxiv.org/abs/1901.02970",
+  "priority": "P0",
+  "evidence_status": "题录、论文 HTML 的表示/对齐/评测段、官方 README 已核验；未运行代码",
+  "note_path": "related_work/papers/2019_nocs/README.md",
+  "checked_on": "2026-09-29"
+}

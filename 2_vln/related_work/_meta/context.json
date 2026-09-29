@@ -1,0 +1,51 @@
+[
+  {
+    "id": "reverie",
+    "title": "REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments",
+    "year": 2020,
+    "first_arxiv_year": 2019,
+    "category": "目标指代导航基准",
+    "priority": "P1",
+    "path": "related_work/papers/2020_reverie/README.md",
+    "primary_url": "https://arxiv.org/abs/1904.10151",
+    "code_url": "https://github.com/YuankaiQi/REVERIE",
+    "evidence": "摘要、CVF正式页与可检索正文片段、官方README；未逐公式精读",
+    "humanoid_evidence": "图式环境导航与物体定位；非人形物理或操作验证"
+  },
+  {
+    "id": "soon",
+    "title": "SOON: Scenario Oriented Object Navigation with Graph-based Exploration",
+    "year": 2021,
+    "category": "目标描述与探索基准",
+    "priority": "P1",
+    "path": "related_work/papers/2021_soon/README.md",
+    "primary_url": "https://arxiv.org/abs/2103.17138",
+    "code_url": "https://github.com/ZhuFengdaaa/SOON",
+    "evidence": "摘要、官方项目/挑战页、代码README及CVF可检索正文片段",
+    "humanoid_evidence": "图式目标搜索；非人形物理验证"
+  },
+  {
+    "id": "foundation_models_survey",
+    "title": "Vision-and-Language Navigation Today and Tomorrow: A Survey in the Era of Foundation Models",
+    "year": 2024,
+    "category": "综述与入门框架",
+    "priority": "P0",
+    "path": "related_work/papers/2024_foundation_models_survey/README.md",
+    "primary_url": "https://arxiv.org/abs/2407.07035",
+    "code_url": null,
+    "evidence": "HTML v2框架/任务表/记忆/未来方向；未核全部被引论文",
+    "humanoid_evidence": "综述；不提供独立人形实机结果"
+  },
+  {
+    "id": "realworld_survey",
+    "title": "A Comprehensive Survey and Systematic Real-World Evaluation of Embodied Vision-and-Language Navigation",
+    "year": 2026,
+    "category": "综述与实机评测",
+    "priority": "P1",
+    "path": "related_work/papers/2026_realworld_survey/README.md",
+    "primary_url": "https://arxiv.org/abs/2607.09792",
+    "code_url": null,
+    "evidence": "HTML v1分类与实机设置/局限段落；arXiv备注TASE2026接收",
+    "humanoid_evidence": "轮式平台；传感器与控制管线不同，非人形性能比较"
+  }
+]

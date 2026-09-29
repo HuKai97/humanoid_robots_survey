@@ -1,0 +1,98 @@
+[
+  {
+    "id": "2022_vlmaps",
+    "title": "Visual Language Maps for Robot Navigation",
+    "year": 2022,
+    "category": "开放词汇地图与空间目标导航",
+    "priority": "P1",
+    "path": "related_work/papers/2022_vlmaps/README.md",
+    "primary_url": "https://arxiv.org/abs/2210.05714",
+    "code_url": "https://github.com/vlmaps/vlmaps",
+    "evidence": "摘要、项目方法、作者机构技术介绍、代码 README；未阅读全文",
+    "humanoid_evidence": "轮式/无人机跨形态展示；未见双足人形 VLN 验证"
+  },
+  {
+    "id": "2022_lm_nav",
+    "title": "LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action",
+    "year": 2022,
+    "category": "模块化语言导航与拓扑图",
+    "priority": "P1",
+    "path": "related_work/papers/2022_lm_nav/README.md",
+    "primary_url": "https://arxiv.org/abs/2207.04429",
+    "code_url": "https://github.com/blazejosinski/lm_nav",
+    "evidence": "摘要、PMLR 元信息、项目方法、代码 README",
+    "humanoid_evidence": "真实移动机器人室外导航；未见双足人形验证"
+  },
+  {
+    "id": "2023_navgpt",
+    "title": "NavGPT: Explicit Reasoning in Vision-and-Language Navigation with Large Language Models",
+    "year": 2023,
+    "category": "LLM 零样本离散 VLN",
+    "priority": "P1",
+    "path": "related_work/papers/2023_navgpt/README.md",
+    "primary_url": "https://arxiv.org/abs/2305.16986",
+    "code_url": "https://github.com/GengzeZhou/NavGPT",
+    "evidence": "HTML 问题/方法/实验设定、摘要、代码 README",
+    "humanoid_evidence": "离散图仿真；未见人形实机验证"
+  },
+  {
+    "id": "2024_navgpt2",
+    "title": "NavGPT-2: Unleashing Navigational Reasoning Capability for Large Vision-Language Models",
+    "year": 2024,
+    "category": "VLM 表征与离散拓扑策略",
+    "priority": "P1",
+    "path": "related_work/papers/2024_navgpt2/README.md",
+    "primary_url": "https://arxiv.org/abs/2407.12366",
+    "code_url": "https://github.com/GengzeZhou/NavGPT-2",
+    "evidence": "HTML v1 方法/训练/设定、README 权重与结果表",
+    "humanoid_evidence": "离散图 VLN；未见人形实机验证"
+  },
+  {
+    "id": "2024_navid",
+    "title": "NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation",
+    "year": 2024,
+    "category": "RGB 视频 VLN-CE 与 sim-to-real",
+    "priority": "P0",
+    "path": "related_work/papers/2024_navid/README.md",
+    "primary_url": "https://arxiv.org/abs/2402.15852",
+    "code_url": "https://github.com/jzhzhang/NaVid-VLN-CE",
+    "evidence": "HTML v2 方法/设定/实机附录、项目、当前评测 README；注意版本变化",
+    "humanoid_evidence": "TurtleBot 4 轮式实机；高层模型 RGB-only，执行层有里程计"
+  },
+  {
+    "id": "2023_vlfm",
+    "title": "VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation",
+    "year": 2023,
+    "category": "ObjectNav 语义探索",
+    "priority": "P1",
+    "path": "related_work/papers/2023_vlfm/README.md",
+    "primary_url": "https://arxiv.org/abs/2312.03275",
+    "code_url": "https://github.com/rai-opensource/vlfm",
+    "evidence": "HTML v1 任务/方法/结果设定、摘要、官方 README",
+    "humanoid_evidence": "Boston Dynamics Spot 四足实机；不是人形 VLN"
+  },
+  {
+    "id": "2024_uni_navid",
+    "title": "Uni-NaVid: A Video-based Vision-Language-Action Model for Unifying Embodied Navigation Tasks",
+    "year": 2024,
+    "category": "多任务视频导航 VLA",
+    "priority": "P1",
+    "path": "related_work/papers/2024_uni_navid/README.md",
+    "primary_url": "https://arxiv.org/abs/2412.06224",
+    "code_url": "https://github.com/jzhzhang/Uni-NaVid",
+    "evidence": "HTML v2 方法/训练/基准/实机附录、项目、官方 README",
+    "humanoid_evidence": "Unitree GO2 四足；本地控制使用 LiDAR；未见双足人形验证"
+  },
+  {
+    "id": "2024_openvla",
+    "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+    "year": 2024,
+    "category": "通用操作 VLA 背景",
+    "priority": "P2",
+    "path": "related_work/papers/2024_openvla/README.md",
+    "primary_url": "https://arxiv.org/abs/2406.09246",
+    "code_url": "https://github.com/openvla/openvla",
+    "evidence": "摘要、HTML v3 架构/动作编码、项目方法实验、README",
+    "humanoid_evidence": "操作机器人证据；非导航或人形 locomotion 验证"
+  }
+]

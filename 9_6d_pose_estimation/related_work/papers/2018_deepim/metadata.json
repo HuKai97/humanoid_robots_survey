@@ -1,0 +1,17 @@
+{
+  "id": "deepim",
+  "title": "DeepIM: Deep Iterative Matching for 6D Pose Estimation",
+  "year": 2018,
+  "venue": "ECCV",
+  "family": "model-based; render-and-compare; iterative pose refinement",
+  "input": "RGB + object region/masks + intrinsics + rendered model + initial 6D pose",
+  "object_prior": "Known renderable metric 3D model and object identity; initial pose required; unseen-object refinement studied",
+  "training_requirement": "Supervised relative-pose refinement with rendered/observed pairs and iterative training; generalization depends on training protocol",
+  "output": "Refined object-to-camera R,t; not global detection",
+  "code_url": "https://github.com/liyi14/mx-DeepIM",
+  "paper_url": "https://openaccess.thecvf.com/content_ECCV_2018/html/Yi_Li_DeepIM_Deep_Iterative_ECCV_2018_paper.html",
+  "priority": "P1",
+  "evidence_status": "cvf_abstract_conference_method_search_excerpt_project_and_official_readmes_verified; later_journal_RGBD_extension_separated; full_conference_paper_not_read; not_reproduced",
+  "note_path": "related_work/papers/2018_deepim/README.md",
+  "checked_on": "2026-09-29"
+}

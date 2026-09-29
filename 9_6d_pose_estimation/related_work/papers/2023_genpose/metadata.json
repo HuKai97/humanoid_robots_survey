@@ -1,0 +1,17 @@
+{
+  "id": "genpose",
+  "title": "Generative Category-level Object Pose Estimation via Diffusion Models",
+  "year": 2023,
+  "venue": "NeurIPS 2023",
+  "family": "category-level probabilistic / diffusion pose estimation",
+  "input": "已分割物体的部分深度点云；RGB-D 与实例掩码可构造输入",
+  "object_prior": "无测试实例 CAD 或显式类别形状模板；存在训练数据学到的形状/对称分布先验",
+  "training_requirement": "位姿监督下训练 score 网络与 energy 网络；非免训练方法",
+  "output": "多个 R、t 候选及聚合的 6D 位姿；核心扩散输出不含三维尺寸",
+  "code_url": "https://github.com/Jiyao06/GenPose",
+  "paper_url": "https://arxiv.org/abs/2306.10531",
+  "priority": "P1",
+  "evidence_status": "NeurIPS 2023 题录、论文 HTML、作者项目与 README 已核验；未运行；tracking masks 存在人工作业条件",
+  "note_path": "related_work/papers/2023_genpose/README.md",
+  "checked_on": "2026-09-29"
+}

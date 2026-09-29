@@ -1,0 +1,18 @@
+{
+  "id": "onepose_plus_plus",
+  "title": "OnePose++: Keypoint-Free One-Shot Object Pose Estimation without CAD Models",
+  "year": 2022,
+  "venue": "NeurIPS 2022; arXiv posted 2023",
+  "family": "通用物体 / RGB扫描 / 无关键点半稠密SfM",
+  "input": "RGB查询、内参；已知位姿参考图像序列",
+  "object_prior": "对象参考序列及半稠密重建；无需CAD",
+  "training_requirement": "通用2D-3D匹配网络及LoFTR预训练；新对象无需重训但需重建",
+  "output": "物体坐标系到相机坐标系的刚体变换 T_camera_object = [R|t]",
+  "code_url": "https://github.com/zju3dv/OnePose_Plus_Plus",
+  "paper_url": "https://arxiv.org/abs/2301.07673",
+  "priority": "P1",
+  "evidence_status": "official_paper_project_and_repository_verified; not_reproduced",
+  "note_path": "related_work/papers/2022_onepose_plus_plus/README.md",
+  "verified_on": "2026-09-29",
+  "checked_on": "2026-09-29"
+}

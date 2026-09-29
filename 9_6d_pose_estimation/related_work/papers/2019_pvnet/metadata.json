@@ -1,0 +1,17 @@
+{
+  "id": "pvnet",
+  "title": "PVNet: Pixel-wise Voting Network for 6DoF Pose Estimation",
+  "year": 2019,
+  "venue": "CVPR",
+  "family": "instance-level; 2D keypoint voting; uncertainty-aware PnP",
+  "input": "RGB + camera intrinsics",
+  "object_prior": "Known metric model and predefined 3D keypoints; trained objects",
+  "training_requirement": "Object-specific supervised segmentation/vector-field learning",
+  "output": "Object-to-camera R,t",
+  "code_url": "https://github.com/zju3dv/pvnet",
+  "paper_url": "https://arxiv.org/abs/1812.11788",
+  "priority": "P1",
+  "evidence_status": "method_html_project_and_official_readme_verified; experiment_tables_not_fully_audited; not_reproduced",
+  "note_path": "related_work/papers/2019_pvnet/README.md",
+  "checked_on": "2026-09-29"
+}

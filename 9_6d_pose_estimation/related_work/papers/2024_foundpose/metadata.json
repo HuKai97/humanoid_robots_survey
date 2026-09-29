@@ -1,0 +1,18 @@
+{
+  "id": "foundpose",
+  "title": "FoundPose: Unseen Object Pose Estimation with Foundation Features",
+  "year": 2024,
+  "venue": "ECCV 2024",
+  "family": "通用物体 / CAD / 冻结视觉特征 / 2D-3D PnP",
+  "input": "单张RGB、内参、对象mask及身份",
+  "object_prior": "有纹理三维模型和预渲染模板；模板深度不等于查询深度",
+  "training_requirement": "基础方案不需对象或6D任务专属训练；使用预训练DINOv2；若外接学习式精修需另列训练前提",
+  "output": "物体坐标系到相机坐标系的刚体变换 T_camera_object = [R|t]",
+  "code_url": "https://github.com/facebookresearch/foundpose",
+  "paper_url": "https://arxiv.org/abs/2311.18809",
+  "priority": "P1",
+  "evidence_status": "official_paper_html_and_repository_verified; repository_is_coarse_only_no_featuremetric_refinement; not_reproduced",
+  "note_path": "related_work/papers/2024_foundpose/README.md",
+  "verified_on": "2026-09-29",
+  "checked_on": "2026-09-29"
+}

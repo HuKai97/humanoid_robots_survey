@@ -1,0 +1,17 @@
+{
+  "id": "hot3d",
+  "title": "HOT3D: Hand and Object Tracking in 3D from Egocentric Multi-View Videos",
+  "year": 2025,
+  "venue": "CVPR 2025",
+  "family": "基准与第一视角交互",
+  "input": "同步多视角 RGB/单色视频；按任务选择数据",
+  "object_prior": "提供物体模型、参考序列与手物标注；使用条件按任务",
+  "training_requirement": "数据集与基准",
+  "output": "手物体三维状态的标注和评测",
+  "code_url": "https://github.com/facebookresearch/hot3d",
+  "paper_url": "https://arxiv.org/abs/2411.19167",
+  "priority": "P0",
+  "evidence_status": "在线正文数据/任务部分、项目与格式文档；未逐表复核",
+  "note_path": "related_work/papers/2025_hot3d/README.md",
+  "checked_on": "2026-09-29"
+}

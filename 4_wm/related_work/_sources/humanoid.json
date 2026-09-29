@@ -1,0 +1,135 @@
+[
+  {
+    "id": "dreamwaq",
+    "title": "DreamWaQ: Learning Robust Quadrupedal Locomotion With Implicit Terrain Imagination via Deep Reinforcement Learning",
+    "year": 2023,
+    "category": "本体感知与隐式环境表征对照",
+    "embodiment": "真实四足 Unitree A1；非原论文人形实证",
+    "is_world_model": false,
+    "note": "相关对照：状态估计、上下文和下一观测预测；不按完整行动条件多步模拟器归类。",
+    "path": "papers/2023_dreamwaq.md",
+    "sources": [
+      "https://arxiv.org/html/2301.10602",
+      "https://sites.google.com/view/dreamwaq"
+    ],
+    "read_depth": "HTML方法/实验/局限重点+作者项目；未复现",
+    "priority": "P0"
+  },
+  {
+    "id": "dwl",
+    "title": "Advancing Humanoid Locomotion: Mastering Challenging Terrains with Denoising World Model Learning",
+    "year": 2024,
+    "category": "人形状态去噪重建",
+    "embodiment": "真实人形 XBot-S / XBot-L，下肢控制",
+    "is_world_model": false,
+    "note": "作者称世界模型；本调查严格分类为当前状态重建相关方法，而非行动条件多步想象。RSS 2024；官方README的DWL任务仍coming soon。",
+    "path": "papers/2024_dwl.md",
+    "sources": [
+      "https://arxiv.org/html/2408.14472",
+      "https://www.roboticsproceedings.org/rss20/p058.html",
+      "https://github.com/roboterax/humanoid-gym"
+    ],
+    "read_depth": "HTML方法/实验重点+RSS官方记录+官方README；未复现",
+    "priority": "P0"
+  },
+  {
+    "id": "wmr",
+    "title": "Learning Humanoid Locomotion with World Model Reconstruction",
+    "year": 2025,
+    "category": "人形显式世界状态重建",
+    "embodiment": "真实人形 Unitree G1，盲走",
+    "is_world_model": false,
+    "note": "作者称世界模型；严格分类为显式当前状态重建。重建状态是策略唯一输入，策略到估计器梯度截断。",
+    "path": "papers/2025_wmr.md",
+    "sources": [
+      "https://arxiv.org/abs/2502.16230",
+      "https://arxiv.org/html/2502.16230"
+    ],
+    "read_depth": "HTML摘要/方法/结果/局限重点；未核验官方完整实现、未复现",
+    "priority": "P0"
+  },
+  {
+    "id": "humanoid_world_models",
+    "title": "Humanoid World Models: Open World Foundation Models for Humanoid Robotics",
+    "year": 2025,
+    "category": "行动条件视频世界模型",
+    "embodiment": "1xGPT EVE 数据，涉及轮式平台；非双足步态验证",
+    "is_world_model": true,
+    "note": "视频预测与效率评估；ICML 2025 workshop，不是ICML主会。未证明闭环双足控制。",
+    "path": "papers/2025_humanoid_world_models.md",
+    "sources": [
+      "https://arxiv.org/html/2506.01182v2",
+      "https://qasim-ali0.github.io/projects/humanoid_world_model/",
+      "https://github.com/qasim-ali0/humanoid_world_model"
+    ],
+    "read_depth": "v2 HTML方法/实验+作者项目+官方README；未运行",
+    "priority": "P1"
+  },
+  {
+    "id": "puppeteer",
+    "title": "Hierarchical World Models as Visual Whole-Body Humanoid Controllers",
+    "year": 2025,
+    "category": "分层潜在世界模型与规划",
+    "embodiment": "56-DoF 仿真人形；含外部视角RGB",
+    "is_world_model": true,
+    "note": "初稿2024，ICLR2025；基于TD-MPC2，真实硬件迁移未由本轮证据验证。",
+    "path": "papers/2025_puppeteer.md",
+    "sources": [
+      "https://arxiv.org/html/2405.18418",
+      "https://www.nicklashansen.com/rlpuppeteer/",
+      "https://github.com/nicklashansen/puppeteer",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/9b867f0e56c4c085ef1cfdad691db5f6-Abstract-Conference.html"
+    ],
+    "read_depth": "HTML方法/实验重点+官方项目/代码页面；未复现",
+    "priority": "P0/P1"
+  },
+  {
+    "id": "mosim",
+    "title": "Neural Motion Simulator: Pushing the Limit of World Models in Reinforcement Learning",
+    "year": 2025,
+    "category": "物理状态动力学世界模型",
+    "embodiment": "多种仿真具身，包括humanoid；非真实人形部署证据",
+    "is_world_model": true,
+    "note": "CVPR2025；预测自身物理状态并用于模型内RL。需区分仿真模型中的零交互训练与真实机器人零交互。",
+    "path": "papers/2025_mosim.md",
+    "sources": [
+      "https://arxiv.org/html/2504.07095",
+      "https://oamics.github.io/mosim_page/",
+      "https://github.com/OamIcs/MoSim"
+    ],
+    "read_depth": "HTML架构/预测实验重点+官方项目/README；未复现",
+    "priority": "P1"
+  },
+  {
+    "id": "cap",
+    "title": "CAP: Continuously Adaptive Perception-Blind Humanoid Locomotion via Learned Denoising",
+    "year": 2026,
+    "category": "世界模型辅助鲁棒深度感知与策略",
+    "embodiment": "真实Unitree G1，下肢控制",
+    "is_world_model": true,
+    "note": "RSSM去噪深度与本体融合辅助策略；arXiv作者备注标注CoRL2026接收，未独立核验会议名单。",
+    "path": "papers/2026_cap.md",
+    "sources": [
+      "https://arxiv.org/html/2609.11553v1",
+      "https://hoshi-no-ai.github.io/CAP/"
+    ],
+    "read_depth": "HTML方法/真实实验/局限/部署附录重点；项目页访问失败、未复现",
+    "priority": "P0/P1"
+  },
+  {
+    "id": "dwmp",
+    "title": "DWMP: Leveraging Dual World Models for Humanoid Obstacle Traversal",
+    "year": 2026,
+    "category": "Koopman与RSSM双路预测表征",
+    "embodiment": "仿真及真实Unitree G1，下肢控制",
+    "is_world_model": true,
+    "note": "2026-09预印本；模型表征增强actor，非已验证长时域规划。本体K转移公式未显式列候选动作，需关注干预能力。",
+    "path": "papers/2026_dwmp.md",
+    "sources": [
+      "https://arxiv.org/abs/2609.12347",
+      "https://arxiv.org/html/2609.12347v1"
+    ],
+    "read_depth": "HTML方法/训练流程/实验表/结论重点；未核验官方完整代码、未复现",
+    "priority": "P1"
+  }
+]

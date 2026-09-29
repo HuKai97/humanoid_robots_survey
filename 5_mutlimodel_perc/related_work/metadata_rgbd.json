@@ -1,0 +1,24 @@
+[
+  {
+    "id": "41",
+    "title": "DenseFusion: 6D Object Pose Estimation by Iterative Dense Fusion",
+    "authors": "Wang, Chen and Xu, Danfei and Zhu, Yuke and Martín-Martín, Roberto and Lu, Cewu and Fei-Fei, Li and Savarese, Silvio",
+    "year": 2019,
+    "category": "RGB-D逐像素外观/几何特征融合与已知物体6D位姿估计",
+    "modalities": ["RGB", "深度（反投影为点云）", "相机内参/配准信息（外部参数）"],
+    "humanoid_relation": "可迁移方法；视觉基准及Toyota HSR移动操作机器人验证，无直接人形验证",
+    "priority": "P0",
+    "arxiv_url": "https://arxiv.org/abs/1901.04780",
+    "project_url": "https://sites.google.com/view/densefusion",
+    "code_url": "https://github.com/j96w/DenseFusion",
+    "note_path": "papers/41_DenseFusion/note.md",
+    "evidence_level": "摘要 + 作者项目页 + HTML方法/实验及附录机器人平台说明 + 官方README；未核验全部实现细节",
+    "learning_paradigm": "监督6D位姿估计；置信度无单独人工标签但依赖监督位姿误差；非RL",
+    "rl_role": "原论文无RL；将位姿或融合特征接入RL策略为后续迁移设想，非本文实验",
+    "train_observations": "RGB、深度、内参与对象区域；位姿监督另需真值变换和对象模型点；分割前端有自身监督来源；已知对象集合",
+    "deploy_observations": "RGB-D、内参与配准信息、估计类别/分割掩码及已训练模型；不读取真值位姿，无原生IMU/编码器融合",
+    "venue": "CVPR 2019",
+    "code_status": "官方模型、训练/评估代码与检查点链接公开；真实机器人抓取ROS代码未包含，依赖版本较旧",
+    "verified_date": "2026-09-29"
+  }
+]

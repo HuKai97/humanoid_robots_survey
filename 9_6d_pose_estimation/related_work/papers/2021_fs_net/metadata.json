@@ -1,0 +1,17 @@
+{
+  "id": "fs_net",
+  "title": "FS-Net: Fast Shape-Based Network for Category-Level 6D Object Pose Estimation With Decoupled Rotation Mechanism",
+  "year": 2021,
+  "venue": "CVPR 2021",
+  "family": "category-level direct regression / shape features",
+  "input": "RGB-D、相机内参；RGB 检测框与类别，深度生成局部点云",
+  "object_prior": "已学习类别、类别平均尺寸；无需测试实例 CAD",
+  "training_requirement": "类别级监督训练与在线三维形状增强；检测器需覆盖目标类别",
+  "output": "R、t、三维尺寸",
+  "code_url": "https://github.com/DC1991/FS_Net",
+  "paper_url": "https://arxiv.org/abs/2103.07054",
+  "priority": "P1",
+  "evidence_status": "CVF 题录、论文 HTML 方法段、官方 README 已核验；仓库说明训练细节有变；未运行",
+  "note_path": "related_work/papers/2021_fs_net/README.md",
+  "checked_on": "2026-09-29"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "gigapose",
+  "title": "GigaPose: Fast and Robust Novel Object Pose Estimation via One Correspondence",
+  "year": 2024,
+  "venue": "CVPR 2024",
+  "family": "通用物体 / CAD / RGB模板与局部对应",
+  "input": "RGB、内参、目标检测/分割区域",
+  "object_prior": "目标CAD及预渲染模板；单图重建模型只是另行探索分支",
+  "training_requirement": "任务专属特征网络在合成数据上预训练；新物体无需重训但需模板入库",
+  "output": "物体坐标系到相机坐标系的刚体变换 T_camera_object = [R|t]",
+  "code_url": "https://github.com/nv-nguyen/gigapose",
+  "paper_url": "https://arxiv.org/abs/2311.14155",
+  "priority": "P1",
+  "evidence_status": "official_paper_html_and_repository_verified; not_reproduced",
+  "note_path": "related_work/papers/2024_gigapose/README.md",
+  "verified_on": "2026-09-29",
+  "checked_on": "2026-09-29"
+}

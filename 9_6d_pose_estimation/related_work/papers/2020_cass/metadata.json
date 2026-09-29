@@ -1,0 +1,17 @@
+{
+  "id": "cass",
+  "title": "Learning Canonical Shape Space for Category-Level 6D Object Pose and Size Estimation",
+  "year": 2020,
+  "venue": "CVPR 2020",
+  "family": "category-level generative canonical shape",
+  "input": "单帧 RGB-D 物体区域、分割结果、相机标定",
+  "object_prior": "训练形状库与类别规范姿态；测试不要求精确实例 CAD",
+  "training_requirement": "VAE 规范形状学习与带姿态监督的 RGB-D 学习",
+  "output": "R、t、三维尺寸和生成的规范形状",
+  "code_url": "https://github.com/densechen/CASS",
+  "paper_url": "https://arxiv.org/abs/2001.09322",
+  "priority": "P2",
+  "evidence_status": "CVF 题录、作者摘要/HTML 可访问部分、官方评测 README 已核验；未逐公式精读、未运行",
+  "note_path": "related_work/papers/2020_cass/README.md",
+  "checked_on": "2026-09-29"
+}

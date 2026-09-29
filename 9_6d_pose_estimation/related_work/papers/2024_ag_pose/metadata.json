@@ -1,0 +1,17 @@
+{
+  "id": "ag_pose",
+  "title": "Instance-Adaptive and Geometric-Aware Keypoint Learning for Category-Level 6D Object Pose Estimation",
+  "year": 2024,
+  "venue": "CVPR 2024",
+  "family": "category-level adaptive keypoint correspondences",
+  "input": "单帧 RGB-D、实例掩码、类别标签、相机内参",
+  "object_prior": "已学习类别与规范坐标；无需测试实例 CAD 或显式类别形状模板",
+  "training_requirement": "位姿/尺寸和规范坐标监督；训练时使用实例模型约束关键点分布",
+  "output": "R、t、三维尺寸",
+  "code_url": "https://github.com/Leeiieeo/AG-Pose",
+  "paper_url": "https://arxiv.org/abs/2403.19527",
+  "priority": "P1",
+  "evidence_status": "CVPR 2024 题录、原论文 HTML 方法与官方 README 已核验；仓库当前声明为扩展版，不能混用其结果；未运行",
+  "note_path": "related_work/papers/2024_ag_pose/README.md",
+  "checked_on": "2026-09-29"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "foundationpose",
+  "title": "FoundationPose: Unified 6D Pose Estimation and Tracking of Novel Objects",
+  "year": 2024,
+  "venue": "CVPR 2024 Highlight",
+  "family": "通用物体 / CAD或参考重建 / RGB-D渲染比较 / 跟踪",
+  "input": "RGB-D、内参；注册阶段目标检测/分割；跟踪阶段上一帧位姿",
+  "object_prior": "CAD，或带对象位姿的RGB-D参考视图用于对象神经场建模",
+  "training_requirement": "位姿网络通用合成数据预训练，新对象不微调位姿网络；无CAD分支需逐对象拟合神经场",
+  "output": "物体坐标系到相机坐标系的刚体变换 T_camera_object = [R|t]",
+  "code_url": "https://github.com/NVlabs/FoundationPose",
+  "paper_url": "https://arxiv.org/abs/2312.08344",
+  "priority": "P0",
+  "evidence_status": "official_paper_html_and_repository_verified; not_reproduced",
+  "note_path": "related_work/papers/2024_foundationpose/README.md",
+  "verified_on": "2026-09-29",
+  "checked_on": "2026-09-29"
+}
